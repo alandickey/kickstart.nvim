@@ -19,6 +19,7 @@ Kickstart.nvim targets *only* the latest
 ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
 If you are experiencing issues, please make sure you have the latest versions.
 
+For my Ubuntu 22.04, use unstable [PPA](## Linux Install)
 
 ### Install External Dependencies
 
