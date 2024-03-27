@@ -19,29 +19,6 @@ Kickstart.nvim targets *only* the latest
 ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim.
 If you are experiencing issues, please make sure you have the latest versions.
 
-### Ubuntu install from PPA
-
-Neovim has been added to a "Personal Package Archive" (PPA). This allows you to install it with `apt-get`. Follow the links to the PPAs to see which versions of Ubuntu are currently available via the PPA. Choose **stable** or **unstable**:
-
-- [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**stable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/stable)
-- [https://launchpad.net/~neovim-ppa/+archive/ubuntu/**unstable**](https://launchpad.net/~neovim-ppa/+archive/ubuntu/unstable)
-
-**Important:** The Neovim team does not maintain the PPA packages. For problems or questions about the PPA specifically contact https://launchpad.net/~neovim-ppa.
-
-To be able to use **add-apt-repository** you may need to install software-properties-common:
-
-    sudo apt-get install software-properties-common
-
-If you're using an older version Ubuntu you must use:
-
-    sudo apt-get install python-software-properties
-
-Run the following commands:
-
-    sudo add-apt-repository ppa:neovim-ppa/stable
-    sudo apt-get update
-    sudo apt-get install neovim
-
 
 ### Install External Dependencies
 
