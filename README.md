@@ -23,7 +23,7 @@ For my Ubuntu 22.04, use unstable ppa in Ubuntu Install Steps under [Linux Insta
 
 ### Install External Dependencies
 
-For my Ubuntu 22.04, install Ubuntu Mono nerd font  [Nerd Font Install](#Install-Nerd-Font)
+For my Ubuntu 22.04, install Ubuntu Mono nerd font  [Nerd Font Install](#Nerd-Font-Install)
 
 > **NOTE**
 > [Backup](#FAQ) your previous configuration (if any exists)
