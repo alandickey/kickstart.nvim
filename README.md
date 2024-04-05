@@ -23,6 +23,8 @@ For my Ubuntu 22.04, use unstable ppa in Ubuntu Install Steps under [Linux Insta
 
 ### Install External Dependencies
 
+For my Ubuntu 22.04, install Ubuntu Mono nerd font  [Nerd Font Install](#Install-Nerd-Font)
+
 > **NOTE**
 > [Backup](#FAQ) your previous configuration (if any exists)
 
@@ -35,8 +37,6 @@ External Requirements:
   - If want to write Typescript, you need `npm`
   - If want to write Golang, you will need `go`
   - etc.
-
-For my Ubuntu 22.04, install Ubuntu Mono nerd font  [Nerd Font Install](#Install-NerdFont)
 
 > **NOTE**
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
