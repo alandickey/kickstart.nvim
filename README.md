@@ -36,6 +36,8 @@ External Requirements:
   - If want to write Golang, you will need `go`
   - etc.
 
+For my Ubuntu 22.04, install Ubuntu Mono nerd font  [Nerd Font Install](#Install-NerdFont)
+
 > **NOTE**
 > See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
 > and quick install snippets
@@ -277,3 +279,43 @@ sudo dnf install -y gcc make git ripgrep fd-find neovim
 ```
 </details>
 
+#### Nerd Font Install
+
+I chose UbuntuMono from NerdFonts https://www.nerdfonts.com/
+
+```
+cd /srv/adickey/afd-work/github
+mkdir -p NerdFonts/UbuntuMono
+mv ~/Downloads/UbuntuMono.zip NerdFonts/
+```
+
+Unzip download in: /srv/adickey/afd-work/github/NerdFonts/UbuntuMono
+
+```
+cd /srv/adickey/afd-work/github/NerdFonts/UbuntuMono
+unzip ../UbuntuMono.zip
+```
+
+UbuntuMono are truetype fonts.
+
+Find fonts:
+
+```
+fc-list
+```
+
+Install in fonts:
+
+```
+sudo mkdir -p /usr/share/fonts/truetype/nerdfonts/ubuntumono
+```
+
+```
+sudo cp /srv/adickey/afd-work/github/NerdFonts/UbuntuMono/*ttf /usr/share/fonts/truetype/nerdfonts/ubuntumono/
+```
+
+```
+sudo fc-cache -f -v
+```
+
+I tested UbuntuMono using LibreOfficeWriter
