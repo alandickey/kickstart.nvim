@@ -319,3 +319,37 @@ sudo fc-cache -f -v
 ```
 
 I tested UbuntuMono using LibreOfficeWriter
+
+Install clangd
+
+```
+sudo apt-get install clangd-12
+sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 100
+```
+
+Install perl 
+
+Add path to perl executable
+
+```
+echo "let g:perl_host_prog = '/usr/bin/perl'" >> .config/nvim/init.vim
+```
+
+Install cpanm
+
+```
+curl -L http://cpanmin.us | perl - --sudo App::cpanminus
+```
+
+Use cpanm to install Neovim::Ext Lsp
+
+```
+sudo cpanm -n install Neovim::Ext
+```
+
+Fix version
+
+```
+sudo sed -i 's/0.06/5.34/' /usr/local/share/perl/5.34.0/Neovim/Ext.pm
+```
+
