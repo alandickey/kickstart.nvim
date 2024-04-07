@@ -352,7 +352,7 @@ sudo cpanm -n install Neovim::Ext
 Fix version
 
 ```
-export VER0=`perl -e '$_=$^V;s/v//;print "$_";'` && export VER=`perl -e '$_=$^V;s/v//;s/.0$//;print "$_";'` && sudo sed -i 's/0.06/$VER/' /usr/local/share/perl/$VER0.0/Neovim/Ext.pm
+export VER0=`perl -e '$_=$^V;s/v//;print "$_";'` && export VER=`perl -e '$_=$^V;s/v//;s/.0$//;print "$_";'` && sudo sed -i 's/0.06/$VER/' /usr/local/share/perl/$VER0/Neovim/Ext.pm
 ```
 
 TODO: fix provider-perl.check to not require match of perl version with Neovim::Ext
