@@ -332,8 +332,10 @@ Install perl
 Add path to perl executable
 
 ```
-echo "let g:perl_host_prog = '/usr/bin/perl'" >> .config/nvim/init.vim
+export PERL=`which perl` && echo "let g:perl_host_prog = '$PERL'" >> .config/nvim/init.vim
 ```
+
+INSTALL perl LSP Neovim::Ext
 
 Install cpanm
 
@@ -350,6 +352,7 @@ sudo cpanm -n install Neovim::Ext
 Fix version
 
 ```
-sudo sed -i 's/0.06/5.34/' /usr/local/share/perl/5.34.0/Neovim/Ext.pm
+export VER=`perl -e '$_=$^V;s/v//;s/.0$//;print "$_";'` && sudo sed -i 's/0.06/$VER/' /usr/local/share/perl/5.34.0/Neovim/Ext.pm
 ```
 
+TODO: fix provider-perl.check to not require match of perl version with Neovim::Ext
