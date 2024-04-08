@@ -20,6 +20,7 @@ Kickstart.nvim targets *only* the latest
 If you are experiencing issues, please make sure you have the latest versions.
 
 For my Ubuntu 22.04, use unstable ppa in Ubuntu Install Steps under [Linux Install](#Install-Recipes)
+This also installs ripgrep.
 
 ### Install External Dependencies
 
