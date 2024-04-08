@@ -20,7 +20,8 @@ Kickstart.nvim targets *only* the latest
 If you are experiencing issues, please make sure you have the latest versions.
 
 For my Ubuntu 22.04, use unstable ppa in Ubuntu Install Steps under [Linux Install](#Install-Recipes)
-This also installs ripgrep.
+
+This also installs ripgrep. Except for Ubuntu 18.04 and earlier. See [Ubuntu 18.04 Install](#Ubuntu-18.04-Install).
 
 ### Install External Dependencies
 
@@ -279,6 +280,15 @@ sudo apt install -t unstable neovim
 sudo dnf install -y gcc make git ripgrep fd-find neovim
 ```
 </details>
+
+#### Ubuntu 18.04 Install
+
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc unzip neovim
+```
+Then: [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
 
 #### Nerd Font Install
 
