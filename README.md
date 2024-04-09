@@ -21,7 +21,7 @@ If you are experiencing issues, please make sure you have the latest versions.
 
 For my Ubuntu 22.04, use unstable ppa in Ubuntu Install Steps under [Linux Install](#Install-Recipes)
 
-This also installs ripgrep. Except for Ubuntu 18.04 and earlier. See [Ubuntu 18.04 Install](#Ubuntu-18.04-Install).
+This also installs ripgrep. Ubuntu 18.04 is no longer supported. See [Ubuntu 18.04 Install](#Ubuntu-18.04-Install).
 
 ### Install External Dependencies
 
@@ -283,12 +283,8 @@ sudo dnf install -y gcc make git ripgrep fd-find neovim
 
 #### Ubuntu 18.04 Install
 
-```
-sudo add-apt-repository ppa:neovim-ppa/unstable -y
-sudo apt update
-sudo apt install make gcc unzip neovim
-```
-Then: [ripgrep](https://github.com/BurntSushi/ripgrep#installation)
+As of April 2024, neovim supports recent Ubuntu versions, 20.04, 22.04, 24.04 and a few non-LTS versions.
+Ubuntu 18.04 is out of support. 
 
 #### Nerd Font Install
 
