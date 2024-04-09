@@ -288,6 +288,14 @@ Ubuntu 18.04 is out of support.
 
 #### Nerd Font Install
 
+You can copy the NerdFont download from adickey@B450M-DS3H:/srv/adickey/afd-work/github/NerdFonts
+
+```
+rsync -avze ssh /srv/adickey/afd-work/github/NerdFonts <TARGET>
+```
+
+Then jump to Find Fonts below.
+
 I chose UbuntuMono from NerdFonts https://www.nerdfonts.com/
 
 ```
